@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="baylormudd.css">
+
+    <title>Baylor Mudd</title>
+
+    <script type='text/JavaScript'>
+      function openMenu(){
+        document.getElementById("menu").classList.remove('menu_closed');
+        document.getElementById("menu").classList.add('menu_animation');
+
+        document.getElementById("icon").classList.remove('menu_icon');
+        document.getElementById("icon").classList.add('return_icon');
+
+      }
+      function setUpMenu(){
+        document.getElementById("menu").classList.add('menu_opened');
+        document.getElementById("menu").classList.remove('menu_animation');
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="container-fluid mb-4 mt-4 cubes">
+      <div id="menu" class="menu_closed">
+        <ul>
+          <li>hey</li>
+          <li>hello</li>
+        </ul>
+       </div>
+
+
+
+  <div class="row mr-2 ml-2">
+    <!-- nav menu start-->
+      <!-- add the menu to the link?-->
+  <div id="icon" class="menu_container2 menu_icon">
+
+      <div class="menu_link">
+      <a href="#" onclick="openMenu();setTimeout(setUpMenu, 2000); return false">menu</a>
+<!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)-->
+        </div>
+  </div>
+
+    <!-- nav menu end-->
+    <div class="col-sm-6 cube1">
+
+    </div>
+    <div class="col-sm-6 cube2">2</div>
+  </div>
+  <div class="row mr-2 ml-2">
+    <div class="col-sm-6 cube3">
+      <div class="cube3_content">
+        <p>
+          Hi!
+
+          i am Baylor
+          </br>
+          mudd
+        </br>
+          This is my online
+        </br>
+           portfolio
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 cube4">4</div>
+  </div>
+  <div class="row mr-2 ml-2">
+    <div class="col-sm-6 cube5">5</div>
+    <div class="col-sm-6 cube6">
+      <div class="cube6_content1">
+
+      <p>
+       on board
+        </br>
+        for
+      </br>
+        doobies and
+      </br>
+         rock climbs
+      </p>
+    </div>
+    </div>
+  </div>
+  <div class="row mr-2 ml-2">
+    <div class="col-sm-6 cube7">7</div>
+    <div class="col-sm-6 cube8">8</div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
