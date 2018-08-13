@@ -1,0 +1,43 @@
+
+
+animation bug spam clicking - almost fixed needs more work
+
+size of menu work -
+create the mirror of the cubes and place it over with z index with bootstrap
+z index is working i believe but white is not showing up but text is.. 
+
+
+maybe use a card??
+https://getbootstrap.com/docs/4.0/components/card/
+------------------------
+
+
+nav bar opening animation
+
+openMenu function
+
+if  element icon's ID has the class menu_icon
+then
+remove menu_closed to element menu
+add menu_animation_open class to element menu
+remove menu_icon class to element icon
+add return_icon class to element icon
+
+if element icon's ID has the class return_icon
+then
+remove menu_opened class to element menu
+add menu_animation_close class to element menu
+remove return_icon class to element icon
+add menu_icon class to element icon
+
+
+close menu functiuon
+
+if element menu's ID has the class menu_closed
+then
+add menu_opened class to element menu
+remove menu_animation_open from element menu
+if element menu's ID has the class menu_open
+add menu_closed class to element menu
+remove menu_animation_close from element menu
+

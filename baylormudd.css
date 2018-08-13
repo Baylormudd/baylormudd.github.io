@@ -5,6 +5,24 @@ height: 254px;
 
 .cubes{
   z-index: 2;
+  background-color: rgba(255,255,255,.3);
+}
+
+.cubes_opened{
+  z-index: 2;
+  background-color: white;
+  position: fixed;
+}
+
+.cubes2{
+  z-index: 2;
+  background-color: white;
+  position:absolute;
+}
+
+.cubes2_animation{
+  animation-name: openMenuKeyframe;
+  animation-duration: 2s;
 }
 
 .menu_container2{
@@ -14,44 +32,221 @@ left: calc(50% - 31px);
 position: absolute;
 margin: 0 auto;
 width: 64px;
-top: 14px;
-z-index: 5;
+top: 15px;
+z-index: 1;
 overflow: hidden;
 }
 
-a, a:focus, a:active, a:hover{
+@media only screen and (max-width: 600px){
+  div.mainmenu {
+  width: 100%;
+  left: 0;
+  border-top-width: 15px;
+}
+}
+
+@media only screen and (max-width: 800px)(max-height: 800px){
+  div.mainmenu {
+  width: 100%;
+  left: 0;
+/*  border-top-width: 15px;*/
+}
+}
+@media only screen and (max-width: 1000px){
+  div.mainmenu {
+  width: 100%;
+  left: 0;
+/*  border-top-width: 15px;*/
+}
+}
+
+.mainmenu{
+    background: none repeat scroll 0 0 rgba(255,255,255,0.9);
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    display: block;
+    border-top: 30px solid #fff;
+    overflow: hidden;
+}
+
+.makeMenuFixed {
+  position: fixed;
+  width: 100%;
+  z-index: 104;
+}
+.navMenu {
+  z-index: 3000;
+  margin-top: 75px;
+  width:100%;
+  height:100%;
+
+  padding-left: 0px;
+  display: inline-block;
+  text-align: center;
+}
+.textDiv{
+  color: #222;
+  width: 100%;
+  height: 100%;
+  padding-top:45px;
+  text-decoration: none;
+   display: block;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    line-height: 1.4;
+
+}
+.list_item{
+
+  height: 20%;
+  width: 100%;
+  background-color: rgba(255,255,255,.3);
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: background-color 1s ease-out;
+ -moz-transition: background-color 1s ease-out;
+ -o-transition: background-color 1s ease-out;
+ transition: background-color 1s ease-out;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+
+}
+
+.white_text{
+  visibility: hidden;
+}
+
+
+a, a:focus, a:active{
   text-decoration: none;
   outline: none;
 }
 
 /* animation station*/
-@keyframes example {
+@keyframes openMenuKeyframe {
   from {height:0px;}
-  to {height:120%;}
+  to {height:500px;}
   from {opacity: 1;}
-  to {opacity: .80;}
+  to {opacity: .3;}
+}
+@keyframes redBurst {
+  from {height:0px;}
+  to {height:100%;}
+  from{width: 100%;}
+  to{width: 100%};
+  from {opacity: 1;}
+  to {opacity: .0;}
+
+}
+
+@keyframes whiteBurst {
+  from {height:0px;}
+  to {height:100%;}
+  from{width: 98%;}
+  to{width: 98%;}
+
+}
+
+@keyframes closeMenuKeyframe{
+  from{height:100%;}
+  to {height:0px;}
+  from {opacity: .80;}
+  to {opacity:1;}
+}
+
+.list_item:hover {
+  background-color: rgba(255,255,255,1);
+  cursor: pointer;
+}
+
+.links{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: .3;
+  z-index:5;
+  position: absolute;
+
+}
+
+.example_glow{
+  animation-name: example;
+  animation-duration: 1s;
+
 }
 .menu_closed {
-  width:0px;
-  height:0px;
+  visibility: hidden;
+  z-index: 7;
+  position:fixed;
 }
-.menu_animation{
-  animation-name: example;
-  animation-duration: 2s;
+.menu_animation_red_burst{
+  animation-name: redBurst;
+  animation-duration: 1s;
+  background-color: #e61c3f;
+  position: absolute;
+  z-index: 4;
+}
+.menu_animation_white_burst{
+  animation-name: redBurst;
+  animation-duration: 1s;
+  background-color: white;
+  opacity: .80;
+  position: absolute;
+  z-index: 4;
+}
+
+.menu_animation_open{
+  animation-name: openMenuKeyframe;
+  animation-duration: 1s;
+  background-color: rgba(255,255,255);
+  position: absolute;
+  z-index: 4;
+}
+
+.menu_animation_open2{
+  animation-name: openMenuKeyframe;
+  animation-duration: 1s;
   width: 100%;
   background-color: white;
   position: absolute;
   z-index: 4;
+}
+
+.menu_animation_close{
+  animation-name: closeMenuKeyframe;
+  animation-duration: 1s;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 4;
+
 }
 .menu_opened {
-  width: 100%;
-  height: 120%;
-  opacity: .80;
-  background-color: white;
-  position: absolute;
-  z-index: 4;
+  z-index: 3005;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.90);
 }
 /* end of animation station */
+
+.hide_link_text{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: -1;
+  text-decoration: none;
+  outline: none;
+}
 
 
 
@@ -65,9 +260,15 @@ a, a:focus, a:active, a:hover{
   background-repeat: no-repeat;
 }
 
-.menu_link{
+.menu_link_can_click{
   position: relative;
   z-index: 1;
+
+}
+
+.menu_link_cant_click{
+  text-indent: -9999px;
+
 }
 
 p {
@@ -93,7 +294,7 @@ height: 254px;
 .cube3_content {
   display: block;
   padding-top: 10px;
-  padding-left: 8px;
+  padding-left: 8px
   text-align: left;
 }
 

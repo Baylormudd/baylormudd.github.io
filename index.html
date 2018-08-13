@@ -12,51 +12,116 @@
     <title>Baylor Mudd</title>
 
     <script type='text/JavaScript'>
-      function openMenu(){
-        document.getElementById("menu").classList.remove('menu_closed');
-        document.getElementById("menu").classList.add('menu_animation');
-
-        document.getElementById("icon").classList.remove('menu_icon');
-        document.getElementById("icon").classList.add('return_icon');
+      function glow1(){
+        document.getElementById("cube1").classList.add('example_glow');
 
       }
+      function glow2(){
+        document.getElementById("cube2").classList.add('example_glow');
+
+      }
+      function glow3(){
+        document.getElementById("cube3").classList.add('example_glow');
+
+      }
+      function glow4(){
+        document.getElementById("cube4").classList.add('example_glow');
+
+      }
+      function glow5(){
+        document.getElementById("cube5").classList.add('example_glow');
+
+      }
+      function glow6(){
+        document.getElementById("cube6").classList.add('example_glow');
+
+      }
+
+    function redBurst(){
+  }
+  function whiteBurst(){
+
+
+}
+      function openMenu(){
+        document.getElementById("container_guy").classList.add('cubes2_animation');
+
+
+
+        }
+
       function setUpMenu(){
+        document.getElementById("menu").classList.remove('menu_closed');
         document.getElementById("menu").classList.add('menu_opened');
-        document.getElementById("menu").classList.remove('menu_animation');
+        document.getElementById("container_guy").classList.remove('cubes2_animation');
+        document.getElementById("container_guy").classList.add('cubes');
+      // document.getElementById("menu").classList.add('center');
+
+
+
+
       }
     </script>
   </head>
   <body>
 
-    <div class="container-fluid mb-4 mt-4 cubes">
-      <div id="menu" class="menu_closed">
-        <ul>
-          <li>hey</li>
-          <li>hello</li>
-        </ul>
-       </div>
+    <section class="makeMenuFixed">
+    <nav id="menu_bar" class="mainmenu">
+    </nav>
 
+    <div id="icon" class="menu_container2 menu_icon">
+        <div id="link_text" class="menu_link_can_click">
+        <a href="#" onclick="openMenu();setTimeout(setUpMenu,2000); return false"><span class="white_text">menu</span></a>
+  <!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)
+  below is working one
+  <a href="#" onclick="redBurst();setTimeout(openMenu,100);setTimeout(setUpMenu, 1100); return false"><span class="white_text">menu</span></a>
+  -->
+          </div>
+    </div>
+  </section>
+  <div id="menu" class="menu_closed">
 
+    <ul class="navMenu">
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">home</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">about</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">what i do</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">contact</div></a>
+</li>
+
+</ul>
+   </div>
+
+    <div id="container_guy" class="container-fluid mb-4">
 
   <div class="row mr-2 ml-2">
-    <!-- nav menu start-->
-      <!-- add the menu to the link?-->
-  <div id="icon" class="menu_container2 menu_icon">
 
-      <div class="menu_link">
-      <a href="#" onclick="openMenu();setTimeout(setUpMenu, 2000); return false">menu</a>
-<!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)-->
-        </div>
-  </div>
+
+    <!-- nav menu start-->
+      <!-- add the menu to the link?
+        -notes
+          condensed menu_container2 into menu_icon css
+    -->
+
 
     <!-- nav menu end-->
-    <div class="col-sm-6 cube1">
+    <div id="cube1" class="col-sm-6 cube1">
 
     </div>
-    <div class="col-sm-6 cube2">2</div>
+    <div id="cube2" class="col-sm-6 cube2 ">2</div>
   </div>
   <div class="row mr-2 ml-2">
-    <div class="col-sm-6 cube3">
+    <div id="cube3" class="col-sm-6 cube3">
       <div class="cube3_content">
         <p>
           Hi!
@@ -71,11 +136,11 @@
         </p>
       </div>
     </div>
-    <div class="col-sm-6 cube4">4</div>
+    <div id="cube4" class="col-sm-6 cube4">4</div>
   </div>
   <div class="row mr-2 ml-2">
-    <div class="col-sm-6 cube5">5</div>
-    <div class="col-sm-6 cube6">
+    <div id="cube5" class="col-sm-6 cube5">5</div>
+    <div id="cube6" class="col-sm-6 cube6">
       <div class="cube6_content1">
 
       <p>
@@ -95,6 +160,8 @@
     <div class="col-sm-6 cube8">8</div>
   </div>
 </div>
+</div>
+<!--</div>-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
