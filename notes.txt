@@ -1,14 +1,26 @@
+link-menu to-do list|          -- NOT DONE BUT
+--------------------|          -- GOOD JOB SO FAR
+-return sprite too large
+-text during return animation
+-colors? 
+-font and text sizes
 
+________________________________________
+DEVELOP ICONS AND ANIMATIONS FOR CUBES!! |
+------------------------------------------
+-
+-
+-
+____________________
+create projects page|
+---------------------
+----
+____________________
+create about me page|
+____________________
+--
+done?
 
-animation bug spam clicking - almost fixed needs more work
-
-size of menu work -
-create the mirror of the cubes and place it over with z index with bootstrap
-z index is working i believe but white is not showing up but text is.. 
-
-
-maybe use a card??
-https://getbootstrap.com/docs/4.0/components/card/
 ------------------------
 
 

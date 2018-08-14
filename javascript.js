@@ -26,6 +26,10 @@ if(String(document.getElementById("icon").className) == "menu_container2 menu_ic
 
     document.getElementById("icon").classList.remove('menu_icon');
     document.getElementById("icon").classList.add('return_icon');
+    document.getElementById("icon").classList.remove('menu_container2');
+
+    document.getElementById("icon").classList.add('menu_container3');
+
 
 
 }
@@ -41,6 +45,7 @@ else if (String(document.getElementById("icon").className) == "menu_container2 r
       document.getElementById("icon").classList.remove('return_icon');
       document.getElementById("icon").classList.add('menu_icon');
 
+
     }
 
     }
@@ -48,14 +53,10 @@ else if (String(document.getElementById("icon").className) == "menu_container2 r
   function setUpMenu(){
     if(String(document.getElementById("menu").className) == "menu_animation_open"){
     document.getElementById("menu").classList.add('menu_opened');
-    document.getElementById("menu").classList.add('w-100');
-    document.getElementById("menu").classList.add('h-100');
-
 
     document.getElementById("menu").classList.remove('menu_animation_open');
-    //red burst
-    document.getElementById("burstStart").classList.remove('menu_animation_red_burst');
-    //red burst
+
+
     document.getElementById("link_text").classList.remove('menu_link_cant_click');
     document.getElementById("link_text").classList.add('menu_link_can_click');
 

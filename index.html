@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -44,23 +44,57 @@
 
 }
       function openMenu(){
-        document.getElementById("container_guy").classList.add('cubes2_animation');
+          if(String(document.getElementById("icon").className) == "menu_container2 menu_icon"){
+            document.getElementById("container_guy").classList.add('cubes2_animation');
+
+          //  document.getElementById("link_text").classList.remove('menu_link_can_click');
+          //  document.getElementById("link_text").classList.add('menu_link_cant_click');
+
+            document.getElementById("icon").classList.remove('menu_icon');
+            document.getElementById("icon").classList.add('return_icon');
+            document.getElementById("icon").classList.remove('menu_container2');
+
+            document.getElementById("icon").classList.add('menu_container3');
+
+}
+else if (String(document.getElementById("icon").className) == "return_icon menu_container3") {
+      document.getElementById("link_text").classList.remove('menu_link_can_click');
+      document.getElementById("link_text").classList.add('menu_link_cant_click');
+      document.getElementById("menu").classList.remove('menu_opened');
+      document.getElementById("menu").classList.add('menu_animation_close');
+      document.getElementById("icon").classList.remove('menu_container3');
+
+      document.getElementById("icon").classList.add('menu_container2');
+
+      document.getElementById("icon").classList.remove('return_icon');
+      document.getElementById("icon").classList.add('menu_icon');
 
 
+    }
 
         }
 
+
+
       function setUpMenu(){
+        if(String(document.getElementById("container_guy").className) == "container-fluid mb-4 cubes2_animation"){
+
         document.getElementById("menu").classList.remove('menu_closed');
         document.getElementById("menu").classList.add('menu_opened');
         document.getElementById("container_guy").classList.remove('cubes2_animation');
-        document.getElementById("container_guy").classList.add('cubes');
+    //    document.getElementById("link_text").classList.remove('menu_link_cant_click');
+    //    document.getElementById("link_text").classList.add('menu_link_can_click');
+
       // document.getElementById("menu").classList.add('center');
+}
 
-
-
-
+      else if (String(document.getElementById("menu").className) == "menu_animation_close") {
+        document.getElementById("menu").classList.add('menu_closed');
+        document.getElementById("menu").classList.remove('menu_animation_close');
+        document.getElementById("link_text").classList.remove('menu_link_cant_click');
+        document.getElementById("link_text").classList.add('menu_link_can_click');
       }
+    }
     </script>
   </head>
   <body>
@@ -71,7 +105,7 @@
 
     <div id="icon" class="menu_container2 menu_icon">
         <div id="link_text" class="menu_link_can_click">
-        <a href="#" onclick="openMenu();setTimeout(setUpMenu,2000); return false"><span class="white_text">menu</span></a>
+        <a href="#" onclick="openMenu();setTimeout(setUpMenu,1000); return false"><span class="white_text">menu</span></a>
   <!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)
   below is working one
   <a href="#" onclick="redBurst();setTimeout(openMenu,100);setTimeout(setUpMenu, 1100); return false"><span class="white_text">menu</span></a>
@@ -83,6 +117,13 @@
 
     <ul class="navMenu">
 
+          <div id="link_text2" class="menu_link_can_click menu_container2">
+          <a href="#" onclick="openMenu();setTimeout(setUpMenu,1000); return false"><span class="white_text">menu</span></a>
+      <!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)
+      below is working one
+      <a href="#" onclick="redBurst();setTimeout(openMenu,100);setTimeout(setUpMenu, 1100); return false"><span class="white_text">menu</span></a>
+      -->
+      </div>
 <li class="list_item">
 <a class="text_links" href="#"><div class="textDiv">home</div></a>
 </li>
@@ -144,11 +185,11 @@
       <div class="cube6_content1">
 
       <p>
-       on board
+       yada yada
         </br>
-        for
+        ya
       </br>
-        doobies and
+        doobe dobee
       </br>
          rock climbs
       </p>
