@@ -156,6 +156,7 @@ overflow: hidden;
     text-transform: uppercase;
     font-size: 1.4em;
     line-height: 1.4;
+    font-family:  oratorFont,sans-serif;
 
 }
 .list_item{
