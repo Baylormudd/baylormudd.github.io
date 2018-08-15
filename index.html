@@ -12,37 +12,29 @@
     <title>Baylor Mudd</title>
 
     <script type='text/JavaScript'>
-      function glow1(){
-        document.getElementById("cube1").classList.add('example_glow');
 
-      }
-      function glow2(){
-        document.getElementById("cube2").classList.add('example_glow');
-
-      }
-      function glow3(){
-        document.getElementById("cube3").classList.add('example_glow');
-
-      }
-      function glow4(){
-        document.getElementById("cube4").classList.add('example_glow');
-
-      }
-      function glow5(){
-        document.getElementById("cube5").classList.add('example_glow');
-
-      }
-      function glow6(){
-        document.getElementById("cube6").classList.add('example_glow');
-
-      }
-
-    function redBurst(){
-  }
-  function whiteBurst(){
-
-
+  function underAnimation(){
+    document.getElementById("about_me_text").setAttribute('style','text-decoration:underline');
 }
+
+function underAnimationTakeOff(){
+  document.getElementById("about_me_text").setAttribute('style','text-decoration:none');
+}
+function underAnimation2(){
+  document.getElementById("projects_text").setAttribute('style','text-decoration:underline');
+}
+
+function underAnimationTakeOff2(){
+document.getElementById("projects_text").setAttribute('style','text-decoration:none');
+}
+function underAnimation3(){
+  document.getElementById("contact_me_text").setAttribute('style','text-decoration:underline');
+}
+
+function underAnimationTakeOff3(){
+document.getElementById("contact_me_text").setAttribute('style','text-decoration:none');
+}
+
       function openMenu(){
           if(String(document.getElementById("icon").className) == "menu_container2 menu_icon"){
             document.getElementById("container_guy").classList.add('cubes2_animation');
@@ -159,8 +151,21 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
     <div id="cube1" class="col-sm-6 cube1">
 
     </div>
-    <div id="cube2" class="col-sm-6 cube2 ">2</div>
+
+    <div id="cube2" class="col-sm-6 cube2">
+  <a href="#" class="padding_top" onmouseover="underAnimation()" onmouseout="underAnimationTakeOff()">
+
+        <div class="cube_image about_me_sprite">
+            <img src="images/IconHeart64.png" alt="heart u">
+
+        </div>
+    <div class="under_text"><span id="about_me_text">about me </span></div>
+
+
+    </div>
+      </a>
   </div>
+
   <div class="row mr-2 ml-2">
     <div id="cube3" class="col-sm-6 cube3">
       <div class="cube3_content">
@@ -177,10 +182,26 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
         </p>
       </div>
     </div>
-    <div id="cube4" class="col-sm-6 cube4">4</div>
+    <div id="cube4" class="col-sm-6 cube4">
+        <a href="#" class="padding_top" onmouseover="underAnimation2()" onmouseout="underAnimationTakeOff2()">
+      <div class="cube_image about_me_sprite">
+          <img src="images/mouse_icon.png" alt="heart u">
+
+      </div>
+    <div class="under_text">   <span id="projects_text">   projects </span></div>
+  </a>
+    </div>
   </div>
   <div class="row mr-2 ml-2">
-    <div id="cube5" class="col-sm-6 cube5">5</div>
+    <div id="cube5" class="col-sm-6 cube5">
+        <a href="#" class="padding_top" onmouseover="underAnimation3()" onmouseout="underAnimationTakeOff3()">
+      <div class="cube_image about_me_sprite">
+          <img src="images/border_plane.png" alt="fly u">
+
+      </div>
+    <div class="under_text"> <span id="contact_me_text"> contact me </span></div>
+  </a>
+    </div>
     <div id="cube6" class="col-sm-6 cube6">
       <div class="cube6_content1">
 
@@ -198,7 +219,24 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
   </div>
   <div class="row mr-2 ml-2">
     <div class="col-sm-6 cube7">7</div>
-    <div class="col-sm-6 cube8">8</div>
+    <div class="col-sm-6 cube8">
+      <nav class="social_nav">
+      <span class="over_text"> Lets Connect </span>
+
+
+        <a href="#" class="social_circle github_sprite">
+        <span class="white_text">  github </span>
+        </a>
+        <a href="#" class="social_circle skype_sprite">
+        <span class="white_text">  skype </span>
+        </a>
+        <a href="#" class="social_circle linkedin_sprite">
+        <span class="white_text">  linkedin </span>
+        </a>
+</nav>
+
+
+    </div>
   </div>
 </div>
 </div>
