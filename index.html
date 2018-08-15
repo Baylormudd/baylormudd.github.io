@@ -12,7 +12,12 @@
     <title>Baylor Mudd</title>
 
     <script type='text/JavaScript'>
-
+function planeMove(){
+  document.getElementById("contact_me_sprite").classList.add('animate_plane');
+}
+function planeMoveOff(){
+  document.getElementById("contact_me_sprite").classList.remove('animate_plane');
+}
 function heartBeat(){
   document.getElementById("about_me_sprite").classList.add('animate_heart');
 
@@ -202,9 +207,9 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
   </div>
   <div class="row mr-2 ml-2">
     <div id="cube5" class="col-sm-6 cube5">
-        <a href="#" class="padding_top" onmouseover="underAnimation3()" onmouseout="underAnimationTakeOff3()">
-      <div class="cube_image about_me_sprite">
-          <img src="images/border_plane.png" alt="fly u">
+        <a href="#" class="padding_top" onmouseover="underAnimation3();planeMove()" onmouseout="underAnimationTakeOff3();planeMoveOff()">
+      <div id="contact_me_sprite" class="cube_image">
+          <img src="images/plane_website.png" alt="fly u">
 
       </div>
     <div class="under_text"> <span id="contact_me_text"> contact me </span></div>

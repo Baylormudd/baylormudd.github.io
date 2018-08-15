@@ -225,6 +225,29 @@ a, a:focus, a:active{
 	to { transform: scale(1.2); }
 }
 
+/* plane animation*/
+@keyframes planeMove{
+  0%{
+    left:0px;
+  }
+  10%{
+    left:1px;
+  }
+  20%{
+    left:2px;
+  }
+  30%{
+    left: 3px;
+  }
+  40%{
+    left: 4px;
+  }
+  100%{
+    left: 10px;
+  }
+
+}
+
 @keyframes closeMenuKeyframe{
   from{height:100%;}
   to {height:0px;}
@@ -354,6 +377,10 @@ a, a:focus, a:active{
 }
 .animate_heart{
   animation: beat .5s infinite alternate;
+  transform-origin: center;
+}
+.animate_plane{
+  animation: planeMove 1s infinite alternate;
   transform-origin: center;
 }
 
