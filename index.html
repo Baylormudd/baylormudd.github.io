@@ -13,6 +13,14 @@
 
     <script type='text/JavaScript'>
 
+function heartBeat(){
+  document.getElementById("about_me_sprite").classList.add('animate_heart');
+
+}
+function heartBeatOff(){
+  document.getElementById("about_me_sprite").classList.remove('animate_heart');
+}
+
   function underAnimation(){
     document.getElementById("about_me_text").setAttribute('style','text-decoration:underline');
 }
@@ -153,10 +161,10 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
     </div>
 
     <div id="cube2" class="col-sm-6 cube2">
-  <a href="#" class="padding_top" onmouseover="underAnimation()" onmouseout="underAnimationTakeOff()">
+  <a href="#" class="padding_top" onmouseover="underAnimation();heartBeat()" onmouseout="underAnimationTakeOff();heartBeatOff();">
 
-        <div class="cube_image about_me_sprite">
-            <img src="images/IconHeart64.png" alt="heart u">
+        <div id="about_me_sprite" class="cube_image about_me_sprite">
+            <img src="images/heart_website.png" alt="heart u">
 
         </div>
     <div class="under_text"><span id="about_me_text">about me </span></div>

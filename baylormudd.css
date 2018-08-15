@@ -220,6 +220,11 @@ a, a:focus, a:active{
 
 }
 
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
 @keyframes closeMenuKeyframe{
   from{height:100%;}
   to {height:0px;}
@@ -344,7 +349,12 @@ a, a:focus, a:active{
   position: relative;
   bottom: -30%;
   background-position: -297px -220px;
+
 }
+}
+.animate_heart{
+  animation: beat .5s infinite alternate;
+  transform-origin: center;
 }
 
 @media screen and (max-width: 576px){
