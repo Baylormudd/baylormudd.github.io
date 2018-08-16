@@ -12,6 +12,14 @@
     <title>Baylor Mudd</title>
 
     <script type='text/JavaScript'>
+
+function fillCube(){
+  document.getElementById("cube_icon").classList.add('animate_cube');
+}
+function dumpCube(){
+  document.getElementById("cube_icon").classList.remove('animate_cube');
+}
+
 function planeMove(){
   document.getElementById("contact_me_sprite").classList.add('animate_plane');
 }
@@ -196,9 +204,9 @@ else if (String(document.getElementById("icon").className) == "return_icon menu_
       </div>
     </div>
     <div id="cube4" class="col-sm-6 cube4">
-        <a href="#" class="padding_top" onmouseover="underAnimation2()" onmouseout="underAnimationTakeOff2()">
+        <a href="#" class="padding_top" onmouseover="underAnimation2();fillCube()" onmouseout="underAnimationTakeOff2();dumpCube()">
       <div class="cube_image about_me_sprite">
-          <img src="images/mouse_icon.png" alt="heart u">
+          <img id="cube_icon" class="cubes_man" alt="heart u">
 
       </div>
     <div class="under_text">   <span id="projects_text">   projects </span></div>

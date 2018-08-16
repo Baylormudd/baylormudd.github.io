@@ -249,6 +249,29 @@ a, a:focus, a:active{
 
 }
 
+@keyframes fillCube{
+  0%{
+  content:url("images/cube_empty_adjusted.png");
+  }
+  33%{
+    content:url("images/cube_empty_adjusted_fill_1.png");
+  }
+  66%{
+    content:url("images/cube_empty_adjusted_fill_2.png");
+  }
+  99%{
+      content:url("images/cube_empty_adjusted_fill_3.png");
+  }
+}
+
+.cubes_man{
+  content:url("images/cube_empty_adjusted.png");
+
+}
+
+
+
+
 @keyframes closeMenuKeyframe{
   from{height:100%;}
   to {height:0px;}
@@ -362,6 +385,21 @@ a, a:focus, a:active{
   text-indent: -9999px;
 
 }
+.animate_heart{
+  animation: beat .5s infinite alternate;
+  transform-origin: center;
+}
+.animate_plane{
+  animation: planeMove 1s infinite alternate;
+  transform-origin: center;
+}
+
+.animate_cube{
+  animation: fillCube 1s infinite alternate;
+  transform-origin: center;
+
+}
+
 @media screen and (min-width: 576px){
 .cube_image{
   display: block;
@@ -376,14 +414,7 @@ a, a:focus, a:active{
 
 }
 }
-.animate_heart{
-  animation: beat .5s infinite alternate;
-  transform-origin: center;
-}
-.animate_plane{
-  animation: planeMove 1s infinite alternate;
-  transform-origin: center;
-}
+
 
 @media screen and (max-width: 576px){
 .cube_image{
