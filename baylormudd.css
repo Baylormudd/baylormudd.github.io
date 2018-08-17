@@ -259,7 +259,7 @@ a, a:focus, a:active{
   66%{
     content:url("images/cube_empty_adjusted_fill_2.png");
   }
-  99%{
+  100%{
       content:url("images/cube_empty_adjusted_fill_3.png");
   }
 }
@@ -472,6 +472,13 @@ a, a:focus, a:active{
   font-family: oratorFont,sans-serif;
 
 }
+.baylor_circle{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+}
 
 .social_circle{
   display:inline-block;
@@ -489,17 +496,17 @@ a, a:focus, a:active{
 }
 
 .github_sprite{
-  background-image: url("images/GitHub-Mark-32px.png");
+  background-image: url("images/GitHub-Mark-White-cpj-32px.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .skype_sprite{
-  background-image: url("images/skype-icon.png");
+  background-image: url("images/skype-icon_edit_cpj_white.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .linkedin_sprite{
-  background-image: url("images/chrome_linkedin_32.png");
+  background-image: url("images/bm_linkedin_edit_cpj_white.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;

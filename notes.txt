@@ -1,15 +1,18 @@
-link-menu to-do list|          -- NOT DONE BUT
---------------------|          -- GOOD JOB SO FAR!!
+SMALL THINGS THAT NEED FIXED
+--------------------|          -- GOOD JOB SO FAR!!!
 -return sprite too large
 -text during return animation
 -colors? 
 -font and text sizes
+  -text of cube text same color as cube not all black
+-size of top white bar changes for small phones
+-close the gap between links on drop down for small phones
 
-________________________________________
-DEVELOP ICONS AND ANIMATIONS FOR CUBES!! |
-------------------------------------------
--make blocks the link
--
+_____________________________________
+finish cube #1 and connect w/ me cube|
+-------------------------------------
+-make baylormudd icon
+-add baylormudd text
 -
 ____________________
 create projects page|
