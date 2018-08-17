@@ -473,9 +473,9 @@ a, a:focus, a:active{
 
 }
 .baylor_circle{
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  /*border-radius: 50%;*/
   background-color: white;
   overflow: hidden;
 }
@@ -510,6 +510,13 @@ a, a:focus, a:active{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
+}
+.baylormudd_sprite{
+  background-image: url("images/red_jewel64.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+
 }
 
 p {
