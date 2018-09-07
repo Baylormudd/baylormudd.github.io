@@ -1,7 +1,4 @@
-.cube1 {
-background-color: #dadada;
-height: 254px;
-}
+
 .padding_top{
   display: block;
   height: 100%;
@@ -399,6 +396,35 @@ a, a:focus, a:active{
   transform-origin: center;
 
 }
+@media screen and (min-width: 576px){
+.about_me_icon{
+  display: block;
+  width: 58px;
+  min-height: 55px;
+  padding-top: 0px;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+  bottom: -30%;
+  background-position: -297px -220px;
+
+}
+}
+
+
+@media screen and (max-width: 576px){
+.about_me_icon{
+  display: block;
+  width: 58px;
+  min-height: 55px;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+  bottom: -30%;
+  background-position: -297px -220px;
+
+}
+}
 
 @media screen and (min-width: 576px){
 .cube_image{
@@ -465,6 +491,17 @@ a, a:focus, a:active{
   text-align: center;
   font-family: oratorFont,sans-serif;
 }
+.under_text_about_me{
+  position: relative;
+  display: block;
+  bottom: -40%;
+  text-align: center;
+  font-family: oratorFont,sans-serif;
+  color: #e61c3f;
+  letter-spacing: 5px;
+  font-size: 1.85em;
+  font-weight: bold;
+}
 
 .over_text{
   display: block;
@@ -518,6 +555,11 @@ a, a:focus, a:active{
   background-size: 80%;
 
 }
+.baylormudd_sprite_about_me{
+  background-image: url("images/red_jewel64.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
 
 p {
   font-size: 19px;
@@ -528,12 +570,37 @@ p {
   color: #a5142d;
   font-weight: normal;
 }
+.about_me_image{
+  background-image:url("images/about_me_cropped.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+.cube1 {
+background-color: #dadada;
+height: 254px;
+}
+
+.cube1_about_me{
+  background-color: #dadada;
+height: 586px;
+}
 
 .cube2 {
 background-color: #bfabaa;
 height: 254px;
-
 }
+
+.cube2_about_me{
+
+  background-color: #dadada;
+  height: 508px;
+}
+
 .cube3 {
 background-color: #e61c3f;
 height: 254px;
@@ -573,4 +640,26 @@ height: 254px;
 .cube8 {
   background-color: #bfabaa;
   height: 254px;
+}
+
+/*about me css start */
+.about_me_container{
+  width: 100%;
+  height: 1200px;
+  background-color: green;
+}
+
+.intro_text{
+   color: #a5142d;
+   margin-left: 60px;
+   font-size: 1.5em;
+   font-family:  oratorFont,sans-serif;
+   margin-top: 15px;
+   letter-spacing: 1px;
+
+}
+
+.who_i_am{
+  margin-left: 70px;
+
 }
