@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="baylormudd.css">
+
+   <link rel="icon"
+         type="image/png"
+         href="red_jewel_fav.png">
+
+   <title>Baylor Mudd</title>
+
+   <script type='text/JavaScript'>
+
+function fillCube(){
+ document.getElementById("cube_icon").classList.add('animate_cube');
+}
+function dumpCube(){
+ document.getElementById("cube_icon").classList.remove('animate_cube');
+}
+
+function planeMove(){
+ document.getElementById("contact_me_sprite").classList.add('animate_plane');
+}
+function planeMoveOff(){
+ document.getElementById("contact_me_sprite").classList.remove('animate_plane');
+}
+function heartBeat(){
+ document.getElementById("about_me_sprite").classList.add('animate_heart');
+
+}
+function heartBeatOff(){
+ document.getElementById("about_me_sprite").classList.remove('animate_heart');
+}
+
+ function underAnimation(){
+   document.getElementById("about_me_text").setAttribute('style','text-decoration:underline');
+}
+
+function underAnimationTakeOff(){
+ document.getElementById("about_me_text").setAttribute('style','text-decoration:none');
+}
+function underAnimation2(){
+ document.getElementById("projects_text").setAttribute('style','text-decoration:underline');
+}
+
+function underAnimationTakeOff2(){
+document.getElementById("projects_text").setAttribute('style','text-decoration:none');
+}
+function underAnimation3(){
+ document.getElementById("contact_me_text").setAttribute('style','text-decoration:underline');
+}
+
+function underAnimationTakeOff3(){
+document.getElementById("contact_me_text").setAttribute('style','text-decoration:none');
+}
+
+     function openMenu(){
+         if(String(document.getElementById("icon").className) == "menu_container2 menu_icon"){
+           document.getElementById("container_guy").classList.add('cubes2_animation');
+
+         //  document.getElementById("link_text").classList.remove('menu_link_can_click');
+         //  document.getElementById("link_text").classList.add('menu_link_cant_click');
+
+           document.getElementById("icon").classList.remove('menu_icon');
+           document.getElementById("icon").classList.add('return_icon');
+           document.getElementById("icon").classList.remove('menu_container2');
+
+           document.getElementById("icon").classList.add('menu_container3');
+
+}
+else if (String(document.getElementById("icon").className) == "return_icon menu_container3") {
+     document.getElementById("link_text").classList.remove('menu_link_can_click');
+     document.getElementById("link_text").classList.add('menu_link_cant_click');
+     document.getElementById("menu").classList.remove('menu_opened');
+     document.getElementById("menu").classList.add('menu_animation_close');
+     document.getElementById("icon").classList.remove('menu_container3');
+
+     document.getElementById("icon").classList.add('menu_container2');
+
+     document.getElementById("icon").classList.remove('return_icon');
+     document.getElementById("icon").classList.add('menu_icon');
+
+
+   }
+
+       }
+
+
+
+     function setUpMenu(){
+       if(String(document.getElementById("container_guy").className) == "container-fluid mb-4 cubes2_animation"){
+
+       document.getElementById("menu").classList.remove('menu_closed');
+       document.getElementById("menu").classList.add('menu_opened');
+       document.getElementById("container_guy").classList.remove('cubes2_animation');
+   //    document.getElementById("link_text").classList.remove('menu_link_cant_click');
+   //    document.getElementById("link_text").classList.add('menu_link_can_click');
+
+     // document.getElementById("menu").classList.add('center');
+}
+
+     else if (String(document.getElementById("menu").className) == "menu_animation_close") {
+       document.getElementById("menu").classList.add('menu_closed');
+       document.getElementById("menu").classList.remove('menu_animation_close');
+       document.getElementById("link_text").classList.remove('menu_link_cant_click');
+       document.getElementById("link_text").classList.add('menu_link_can_click');
+     }
+   }
+   </script>
+ </head>
+ <body>
+
+   <section class="makeMenuFixed">
+   <nav id="menu_bar" class="mainmenu">
+   </nav>
+
+   <div id="icon" class="menu_container2 menu_icon">
+       <div id="link_text" class="menu_link_can_click">
+       <a href="#" onclick="openMenu();setTimeout(setUpMenu,1000); return false"><span class="white_text">menu</span></a>
+ <!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)
+ below is working one
+ <a href="#" onclick="redBurst();setTimeout(openMenu,100);setTimeout(setUpMenu, 1100); return false"><span class="white_text">menu</span></a>
+ -->
+         </div>
+   </div>
+ </section>
+ <div id="menu" class="menu_closed">
+
+   <ul class="navMenu">
+
+         <div id="link_text2" class="menu_link_can_click menu_container2">
+         <a href="#" onclick="openMenu();setTimeout(setUpMenu,1000); return false"><span class="white_text">menu</span></a>
+     <!-- <a href="#" class="menu_link">menu</a> ;setTimeout(setUpMenu, 3000)
+     below is working one
+     <a href="#" onclick="redBurst();setTimeout(openMenu,100);setTimeout(setUpMenu, 1100); return false"><span class="white_text">menu</span></a>
+     -->
+     </div>
+<li class="list_item">
+<a class="text_links" href="index.html"><div class="textDiv">home</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="about_me.html"><div class="textDiv">about</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">what i do</div></a>
+</li>
+
+<li class="list_item">
+<a class="text_links" href="#"><div class="textDiv">contact</div></a>
+</li>
+
+</ul>
+  </div>
+
+   <div id="container_guy" class="container-fluid mb-4">
+
+ <div class="row mr-2 ml-2">
+
+
+   <!-- nav menu start-->
+     <!-- add the menu to the link?
+       -notes
+         condensed menu_container2 into menu_icon css
+   -->
+
+
+   <!-- nav menu end-->
+   <div id="cube1" class="col-sm-12 cube1_projects" style="height: 600px">
+
+
+    <div class="about_me_icon baylormudd_sprite" style="top:75px;"></div>
+     <div class="under_text_about_me" style="top:105px;"><span>PROJECTS </span></div>
+
+   </div>
+ </div>
+ 
+</div>

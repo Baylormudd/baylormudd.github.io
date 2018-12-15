@@ -590,6 +590,11 @@ height: 254px;
 height: 586px;
 }
 
+.cube1_projects{
+  background-color:  #bfabaa;
+height: 254px;
+}
+
 .cube2 {
 background-color: #bfabaa;
 height: 254px;
@@ -599,6 +604,12 @@ height: 254px;
 
   background-color: #dadada;
   height: 508px;
+}
+
+.cube2_projects{
+
+  background-color: #dadada;
+  height: 324px;
 }
 
 .cube3 {
@@ -642,6 +653,7 @@ height: 254px;
   height: 254px;
 }
 
+
 /*about me css start */
 .about_me_container{
   width: 100%;
@@ -661,5 +673,26 @@ height: 254px;
 
 .who_i_am{
   margin-left: 70px;
+
+}
+
+/* projects css*/
+
+.game_cube1{
+  height: 424px;
+ background-color: #dadada;
+
+
+}
+
+.game_cube2{
+  height: 424px;
+  background-color: #e61c3f;
+
+}
+
+.game_cube3{
+  height: 424px;
+  background-color: #a5142d;
 
 }
