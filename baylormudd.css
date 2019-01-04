@@ -1,3 +1,25 @@
+.project-title{
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: oratorFont,sans-serif;
+  color: #e61c3f;
+  letter-spacing: 5px;
+  font-size: 1.85em;
+  font-weight: bold;
+}
+.project-under-title{
+  position: relative;
+  display: block;
+ 
+  text-align: center;
+  font-family: oratorFont,sans-serif;
+  color: #e61c3f;
+  letter-spacing: 5px;
+  font-size: 1.45em;
+  font-weight: bold;
+}
+
 
 .padding_top{
   display: block;
@@ -592,7 +614,7 @@ height: 586px;
 
 .cube1_projects{
   background-color:  #bfabaa;
-height: 254px;
+height:100px;
 }
 
 .cube2 {
